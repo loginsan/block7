@@ -1,0 +1,56 @@
+@import "../theme/vars";
+
+.modal {
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  overflow: visible;
+}
+.modal__title {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.modal__body {
+  padding: 0 1rem 1rem;
+}
+.modal__header {
+  padding: 1.5rem 0 0;
+}
+.modal__close {
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width:$sm) {
+  .modal {
+    position: absolute;
+    left: auto;
+    width: $modal;
+    padding-top: 2rem;
+    border-left: 1px solid $border;
+    box-shadow: $shadow;
+  }
+  .modal__header {
+    padding-top: 0;
+  }
+  .modal__title {
+    padding-left: 2rem;
+  }
+  .modal__title::before {
+    left: -1px;
+  }
+  .modal__body {
+    padding: 0 2rem 1rem;
+  }
+  .modal__close {
+    position: absolute;
+    z-index: 1;
+    top: 2rem;
+    left: -4.5rem;
+    padding: 0;
+    margin-bottom: 0;
+  }
+}

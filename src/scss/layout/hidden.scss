@@ -1,0 +1,18 @@
+@import "../theme/vars";
+
+.hidden {
+  display: none;
+}
+.hide-xs {
+  display: none;
+}
+@media screen and (min-width:$sm) {
+  .hide-xs {
+    display: block;
+  }
+}
+@media screen and (min-width:$xl) {
+  .hide-xl {
+    display: none;
+  }
+}

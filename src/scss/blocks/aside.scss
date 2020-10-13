@@ -1,0 +1,43 @@
+@import "../theme/vars";
+
+.aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  order: -1;
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $xs;
+  background-color: $white;
+  box-shadow: $shadow;
+  overflow: auto;
+}
+.aside--hidden {
+  display: none;
+}
+@media screen and (min-width:$xl) {
+  .aside {
+    position: absolute;
+    z-index: 3;
+    justify-content: flex-start;
+    box-shadow: none;
+  }
+  .aside--hidden {
+    display: flex;
+  }
+  .aside__head {
+    margin-bottom: 15rem;
+  }
+}
+.aside__footer {
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width:$md) {
+  .aside__footer {
+    padding-left: 1.5rem;
+  }
+}

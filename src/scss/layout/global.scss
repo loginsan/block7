@@ -1,0 +1,23 @@
+@import "../theme/vars";
+
+body {
+  margin: 0;
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  background-color: $smoke;
+}
+@media screen and (min-width:$xl) {
+  body {
+    position: relative;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
