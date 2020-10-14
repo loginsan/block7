@@ -1,0 +1,43 @@
+@import "../theme/vars";
+
+.chapters {
+  &__item {
+    box-sizing: border-box;
+    padding: .5rem 1rem;
+    margin-right: 0;
+    border: 2px solid $smoke;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  &__item--active {
+    background: $white;
+    border-color: $chapters;
+  }
+  &__item:hover {
+    background: $white;
+  }
+  &__link {
+    text-decoration: none;
+    color: $textdim;
+  }
+  &__link:active, &__link:hover, &__link:focus {
+    color: $text;
+  }
+  &__list {
+    display: flex;
+    list-style: none;
+    overflow: scroll;
+  }
+  &__list::after {
+    content: '';
+    width: 5rem;
+  }
+  @media screen and (min-width:$xl) {
+    &__list {
+      flex-wrap: wrap;
+      overflow: visible;
+    }
+  }
+}

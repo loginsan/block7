@@ -5,10 +5,10 @@
 }
 .hide-xs {
   display: none;
-}
-@media screen and (min-width:$sm) {
-  .hide-xs {
-    display: block;
+  @media screen and (min-width:$sm) {
+    & {
+      display: block;
+    }
   }
 }
 @media screen and (min-width:$xl) {

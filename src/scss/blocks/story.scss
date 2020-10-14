@@ -1,0 +1,62 @@
+@import "../theme/vars";
+
+.story {
+  &__wrap {
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+  }
+  &__line {
+    margin: 0 0 1.5rem;
+    font-size: .875rem;
+    line-height: 1.29rem;
+    letter-spacing: 0.2px;
+    color: $text;
+  }
+  &__body {
+    height: auto;
+    overflow: hidden;
+    transition: height .4s ease;
+  }
+  &__body--short {
+    height: 6.5rem;
+    margin-bottom: .5rem;
+  }
+  &__figure {
+    margin: 0 0 1rem;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+  @media screen and (min-width:$sm) {
+    & {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    &__wrap {
+      flex-basis: 45%;
+    }
+    &__figure {
+      flex-basis: 46.875%;
+    }
+    &__img {
+      border-radius: 6px;
+      max-width: 100%;
+    }
+    &__body--short {
+      height: 8rem;
+    }
+  }
+  @media screen and (min-width:$md) {
+    &__body--short {
+      height: 10rem;
+    }
+  }
+  @media screen and (min-width:$xl) {
+    &__body--short {
+      height: 12rem;
+    }
+  }
+}

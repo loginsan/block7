@@ -1,0 +1,35 @@
+@import "../theme/vars";
+
+.headline {
+  padding: 1.125rem 0 0;
+  &__item--start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3.125rem;
+    padding: 0 1rem;
+    list-style: none;
+  }
+  &__button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  @media screen and (min-width:$xl) {
+    & {
+      padding-top: 1.875rem;
+    }
+  }
+  @media screen and (min-width:$md) {
+    &__list {
+      padding: 0 1.5rem;
+    }
+  }
+}

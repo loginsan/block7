@@ -1,0 +1,11 @@
+@import "../theme/vars";
+
+.brands__pool {
+  height: 6.75rem;
+  @media screen and (min-width:$sm) {
+    &--short {
+      height: 10rem;
+      overflow: hidden;
+    }
+  }
+}

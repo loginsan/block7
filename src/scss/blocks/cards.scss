@@ -1,0 +1,84 @@
+@import "../theme/vars";
+
+.cards {
+  margin-bottom: 2rem;
+  @media screen and (min-width:$sm) {
+    & {
+      display: grid;
+      margin-bottom: 1rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  @media screen and (min-width:$md) {
+    & {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem 1.5rem;
+    }
+  }
+  @media screen and (min-width:$lg) {
+    & {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem 2rem;
+    }
+  }
+  /* CARDS__ITEM */
+  &__item {
+    min-width: 14rem;
+    max-width: 15rem;
+    height: 4.5rem;
+  }
+  @media screen and (min-width:$sm) {
+    &__item {
+      max-width: none;
+    }
+  }
+  &__item--device {
+    height: 10rem;
+  }
+  &__link {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid $card;
+    background: $white no-repeat 1rem 50%;
+    color: $text;
+    font-weight: 500;
+    text-decoration: none;
+    outline: none;
+  }
+  &__link:active, &__link:hover, &__link:focus {
+    border-color: $textfocus;
+  }
+  &__link::after {
+    position: absolute;
+    z-index: 1;
+    bottom: 1rem;
+    right: 1rem;
+    content: '';
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(./../img/icon-go.svg) 0 0 no-repeat;
+    opacity: 1;
+    transition: all .2s linear;
+  }
+  &__link:active::after, &__link:hover::after, &__link:focus::after {
+    opacity: 0;
+    right: 0;
+  }
+  &__link--lenovo { background-image: url(./../img/brand-lenovo.png) }
+  &__link--samsung { background-image: url(./../img/brand-samsung.png) }
+  &__link--apple { background-image: url(./../img/brand-apple.png) }
+  &__link--viewsonic { background-image: url(./../img/brand-viewsonic.png) }
+  &__link--bosch { background-image: url(./../img/brand-bosch.png) }
+  &__link--hp { background-image: url(./../img/brand-hp.png) }
+  &__link--acer { background-image: url(./../img/brand-acer.png) }
+  &__link--sony { background-image: url(./../img/brand-sony.png) }
+  &__link--lenovo { background-image: url(./../img/brand-lenovo.png) }
+  &__link--samsung { background-image: url(./../img/brand-samsung.png) }
+  &__link--apple { background-image: url(./../img/brand-apple.png) }
+}

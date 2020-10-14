@@ -1,0 +1,99 @@
+@import "../theme/vars";
+
+.prices {
+  &__list {
+    font-size: .875rem;
+  }
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    width: 260px;
+    height: 12.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: $white;
+    border-radius: .375rem;
+  }
+  &__order {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  &__notice {
+    max-width: 27rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: .875rem;
+    line-height: 1.29rem;
+    letter-spacing: 0.2px;
+    color: $text;
+  }
+  &__offer {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+    color: $text;
+    text-decoration: none;
+  }
+  &__offer:hover, &__offer:active, &__offer:focus {
+    color: $textdim;
+  }
+  &__offer::after {
+    position: relative;
+    top: 2px;
+    left: .5rem;
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: url(./../img/gt-red.svg) 50% 100% no-repeat;
+  }
+  &__pool {
+    height: 14.75rem;
+  }
+  &__labels {
+    display: none;
+  }
+  @media screen and (min-width:$sm) {
+    &__pool {
+      height: auto;
+      overflow: visible;
+    }
+    &__list {
+      display: block;
+      width: auto;
+      padding: 0 1rem;
+      background-color: $white;
+      border-radius: .375rem;
+    }
+    &__item {
+      width: auto;
+      height: 4rem;
+      padding: 0;
+      margin-bottom: 0;
+      background-color: transparent;
+      border-radius: 0;
+      border-bottom: 1px solid $card;
+    }
+    &__item:last-child {
+      border-bottom: none;
+    }
+    &__order {
+      right: 0;
+    }
+    &__labels {
+      display: block;
+      padding: .25rem 1rem .75rem;
+    }
+    &__notice {
+      margin-top: 1.5rem;
+    }
+  }
+  @media screen and (min-width:$lg) {
+    &__notice {
+      margin-top: 2rem;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../theme/vars";
+
+.controls {
+  border-bottom: 1px solid $border;
+  background-color: $white;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+    list-style: none;
+  }
+  @media screen and (min-width:$xl) {
+    & {
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      top: 2.5rem;
+      background-color: transparent;
+      border-bottom: none;
+    }
+    &__list {
+      height: auto;
+    }
+  }
+}

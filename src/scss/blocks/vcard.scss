@@ -1,0 +1,38 @@
+@import "../theme/vars";
+
+.vcard__row--icons {
+  margin-bottom: 1rem;
+}
+.vcard__row--email {
+  margin-bottom: .75rem;
+}
+.vcard__row--phone {
+  margin-bottom: 2.5rem;
+}
+.vcard__icons {
+  display: flex;
+  gap: 1rem
+}
+.vcard__link {
+  display: inline-block;
+  text-decoration: none;
+  color: $text;
+  background-color: $white;
+  outline: none;
+  transition: background-color .4s ease;
+  &:active, &:hover, &:focus {
+    background-color: $textfocus;
+  }
+  &--email {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.2px;
+  }
+  &--phone {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -0.6px;
+  }
+}

@@ -1,41 +1,43 @@
 @import "../theme/vars";
 
-.form__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-.form__fieldset::after {
-  clear: both;
-}
-.form__field {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .75rem 1rem;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: $text;
-  background: $white;
-  border: 1px solid $card;
-  border-radius: 8px;
-}
-.form__field::placeholder {
-  color: $bullet;
-}
-.form__notice {
-  padding: 0;
-  margin: 0 0 1rem;
-  font-size: .875rem;
-  line-height: 1rem;
-  color: $text;
-}
-.form__link {
-  text-decoration: none;
-  color: $action;
-}
-.form__submit {
-  float: right;
+.form {
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  &__fieldset::after {
+    clear: both;
+  }
+  &__field {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .75rem 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $text;
+    background: $white;
+    border: 1px solid $card;
+    border-radius: 8px;
+  }
+  &__field::placeholder {
+    color: $bullet;
+  }
+  &__notice {
+    padding: 0;
+    margin: 0 0 1rem;
+    font-size: .875rem;
+    line-height: 1rem;
+    color: $text;
+  }
+  &__link {
+    text-decoration: none;
+    color: $action;
+  }
+  &__submit {
+    float: right;
+  }
 }

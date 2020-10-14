@@ -3,16 +3,16 @@
 .pan {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-@media screen and (min-width:$md) {
-  .pan {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  @media screen and (min-width:$md) {
+    & {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
   }
-}
-@media screen and (min-width:$xl) {
-  .pan {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  @media screen and (min-width:$xl) {
+    & {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
   }
 }

@@ -1,0 +1,36 @@
+@import "../theme/vars";
+
+.credits {
+  list-style: none;
+  text-align: center;
+  &__item {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: .875em;
+    line-height: 1rem;
+    color: $textdim;
+  }
+  &__link {
+    text-decoration: none;
+    color: $textdim;
+  }
+  &__link:hover, &__link:active, &__link:focus {
+    text-decoration: underline;
+  }
+  &__link--copyright {
+    display: block;
+  }
+  @media screen and (min-width:$sm) {
+    & {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    &__item {
+      margin-bottom: 0;
+      flex-basis: 33.33%;
+    }
+    &__item:first-child {text-align: left}
+    &__item:last-child {text-align: right}
+  }
+}

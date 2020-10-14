@@ -1,0 +1,50 @@
+@import "../theme/vars";
+
+.sitenav {
+  &__item {
+    margin-bottom: 1rem;
+  }
+  &__link {
+    display: block;
+    padding-left: 1rem;
+    color: $text;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  &__link:active {
+    background-color: $textfocus;
+    transition: background-color .4s ease;
+    outline: none;
+  }
+  &__link:hover {
+    color: $textdim;
+  }
+  @media screen and (min-width:$md) {
+    &__link {
+      padding-left: 1.5rem;
+    }
+  }
+  &__link--active {
+    position: relative;
+    color: $textdim;
+  }
+  &__link--active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 2rem;
+    background-color: $textfocus;
+    border-radius: 0 4px 4px 0;
+  }
+  @media screen and (min-width:$xl) {
+    &__link--active::before {
+      left: 1px;
+      height: 1.75rem;
+      border-radius: 2px;
+    }
+  }
+}

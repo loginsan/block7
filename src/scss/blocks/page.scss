@@ -4,40 +4,40 @@
   position: relative;
   padding: 0 0 1.5rem;
   margin-left: 0;
-}
-@media screen and (min-width:$xl) {
-  .page {
-    margin-left: $xs;
-    padding-top: 2.5rem;
-    background-color: $smoke;
+  @media screen and (min-width:$xl) {
+    & {
+      margin-left: $xs;
+      padding-top: 2.5rem;
+      background-color: $smoke;
+    }
   }
-}
-.page__header {
-  margin-bottom: 1.5rem;
-}
-.page__title {
-  font-size: 1.75rem;
-  line-height: 1.43;
-}
-@media screen and (min-width:$xl) {
-  .page__title {
-    padding-right: 45%;
+  &__header {
+    margin-bottom: 1.5rem;
   }
-}
-.page__menu {
-  margin-bottom: 1.5rem;
-}
-.page__footer {
-  padding-top: 1rem;
-  border-top: 1px solid $border;
-}
-@media screen and (min-width:$md) {
-  .page__footer {
-    padding-top: 2rem;
+  &__title {
+    font-size: 1.75rem;
+    line-height: 1.43;
   }
-}
-@media screen and (min-width:$xl) {
-  .page__footer {
-    background-color: $smoke;
+  @media screen and (min-width:$xl) {
+    &__title {
+      padding-right: 45%;
+    }
+  }
+  &__menu {
+    margin-bottom: 1.5rem;
+  }
+  &__footer {
+    padding-top: 1rem;
+    border-top: 1px solid $border;
+  }
+  @media screen and (min-width:$md) {
+    &__footer {
+      padding-top: 2rem;
+    }
+  }
+  @media screen and (min-width:$xl) {
+    &__footer {
+      background-color: $smoke;
+    }
   }
 }

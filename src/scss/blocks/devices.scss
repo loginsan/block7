@@ -1,0 +1,11 @@
+@import "../theme/vars";
+
+.devices__pool {
+  height: 12.25rem;
+  @media screen and (min-width:$sm) {
+    &--short {
+      height: 10rem;
+      overflow: hidden;
+    }
+  }
+}

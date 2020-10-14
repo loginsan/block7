@@ -14,30 +14,30 @@
   background-color: $white;
   box-shadow: $shadow;
   overflow: auto;
-}
-.aside--hidden {
-  display: none;
-}
-@media screen and (min-width:$xl) {
-  .aside {
-    position: absolute;
-    z-index: 3;
-    justify-content: flex-start;
-    box-shadow: none;
+  &--hidden {
+    display: none;
   }
-  .aside--hidden {
-    display: flex;
+  @media screen and (min-width:$xl) {
+    & {
+      position: absolute;
+      z-index: 3;
+      justify-content: flex-start;
+      box-shadow: none;
+    }
+    &--hidden {
+      display: flex;
+    }
+    &__head {
+      margin-bottom: 15rem;
+    }
   }
-  .aside__head {
-    margin-bottom: 15rem;
+  &__footer {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
   }
-}
-.aside__footer {
-  padding-left: 1rem;
-  padding-bottom: 2rem;
-}
-@media screen and (min-width:$md) {
-  .aside__footer {
-    padding-left: 1.5rem;
+  @media screen and (min-width:$md) {
+    &__footer {
+      padding-left: 1.5rem;
+    }
   }
 }

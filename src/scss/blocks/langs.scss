@@ -1,0 +1,23 @@
+@import "../theme/vars";
+
+.langs {
+  display: flex;
+  gap: .5rem
+}
+.langs__link {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $text;
+  background-color: $white;
+  outline: none;
+  transition: background-color .4s ease;
+  &:active, &:hover, &:focus {
+    background-color: $textfocus;
+  }
+  &--active {
+    color: $textdim;
+  }
+}
