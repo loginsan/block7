@@ -1,7 +1,7 @@
 import Swiper, {Pagination} from 'swiper';
 Swiper.use([Pagination]);
 
-export const swiperIIFE = (function() {
+(function() {
   "use strict";
   const breakp = window.matchMedia( "(min-width:33.75em)" );
   let swipers = [];

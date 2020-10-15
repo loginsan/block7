@@ -6,15 +6,18 @@ const btnOpenMenu = $(".oicon--menu");
 const btnsClose = $$(".oicon--close");
 const btnsCall = $$(".oicon--call");
 const btnsChat = $$(".oicon--chat");
+const body = $(".cps-page");
 
 btnOpenMenu.addEventListener("click", function() {
   aside[0].classList.remove("aside--hidden");
   blank.classList.remove("hidden");
+  body.classList.add("over-hidden");
 });
 for (let btn of btnsClose) {
   btn.addEventListener("click", function() {
     let parent = this.dataset.parent;
-    blank.classList.toggle("hidden");
+    blank.classList.add("hidden");
+    body.classList.remove("over-hidden");
     if (parent === ".aside--main") {
       aside[0].classList.add("aside--hidden");
     } else {
@@ -30,6 +33,7 @@ const showModal = function(btn, modal) {
     }
     modal.classList.remove("hidden");
     blank.classList.remove("hidden");
+    body.classList.add("over-hidden");
     btn.blur();
   }
 }
@@ -46,4 +50,5 @@ blank.addEventListener("click", function() {
   aside[1].classList.add("hidden");
   aside[2].classList.add("hidden");
   blank.classList.add("hidden");
+  body.classList.remove("over-hidden");
 });
