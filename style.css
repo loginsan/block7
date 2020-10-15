@@ -380,6 +380,9 @@ button, input, textarea {
   .hide-xl {
     display: none; } }
 
+.over-hidden {
+  overflow: hidden; }
+
 .nolist {
   margin: 0;
   padding: 0;
@@ -822,7 +825,7 @@ button, input, textarea {
   left: 0;
   right: 0;
   background-color: #FFFFFF;
-  overflow: visible; }
+  overflow: scroll; }
   .modal__title {
     font-size: 1.5rem;
     line-height: 2.5rem; }
