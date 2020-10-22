@@ -9,20 +9,25 @@
   right: 0;
   background-color: $white;
   overflow: scroll;
+
   &__title {
     font-size: 1.5rem;
     line-height: 2.5rem;
   }
+
   &__body {
     padding: 0 1rem 1rem;
   }
+
   &__header {
     padding: 1.5rem 0 0;
   }
+
   &__close {
     padding-left: 1rem;
     margin-bottom: 2rem;
   }
+
   @media screen and (min-width:$sm) {
     & {
       position: absolute;
@@ -32,18 +37,23 @@
       border-left: 1px solid $border;
       box-shadow: $shadow;
     }
+
     &__header {
       padding-top: 0;
     }
+
     &__title {
       padding-left: 2rem;
     }
+
     &__title::before {
       left: -1px;
     }
+
     &__body {
       padding: 0 2rem 1rem;
     }
+
     &__close {
       position: absolute;
       z-index: 1;

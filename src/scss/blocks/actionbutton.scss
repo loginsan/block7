@@ -17,6 +17,7 @@
   color: $white;
   outline: none;
   transition: all .2s linear;
+
   &::after {
     content: '';
     display: inline-block;
@@ -28,10 +29,12 @@
     background: url(./../img/gt-white.svg) 50% 50% no-repeat;
     border-radius: 50%;
   }
+
   &:hover {
     background-color: $actionh;
     transition: background-color .2s linear;
   }
+
   &:active::after, &:hover::after, &:focus::after {
     margin-right: 0;
     transition: margin-right .2s linear;

@@ -1,8 +1,8 @@
 import Swiper, {Pagination} from 'swiper';
 Swiper.use([Pagination]);
 
-(function() {
-  "use strict";
+//(function() {
+//  "use strict";
   const breakp = window.matchMedia( "(min-width:33.75em)" );
   let swipers = [];
   const swiperPag = [
@@ -56,4 +56,4 @@ Swiper.use([Pagination]);
   };
   breakp.addListener(breakpChecker);
   breakpChecker();
-})();
+//})();

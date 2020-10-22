@@ -1,0 +1,7 @@
+@import "../theme/vars";
+
+@media screen and (min-width:$xl) {
+  .hide-xl {
+    display: none;
+  }
+}

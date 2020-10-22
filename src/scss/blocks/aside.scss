@@ -14,9 +14,11 @@
   background-color: $white;
   box-shadow: $shadow;
   overflow: auto;
+
   &--hidden {
     display: none;
   }
+
   @media screen and (min-width:$xl) {
     & {
       position: absolute;
@@ -24,17 +26,21 @@
       justify-content: flex-start;
       box-shadow: none;
     }
+
     &--hidden {
       display: flex;
     }
+
     &__head {
       margin-bottom: 15rem;
     }
   }
+
   &__footer {
     padding-left: 1rem;
     padding-bottom: 2rem;
   }
+
   @media screen and (min-width:$md) {
     &__footer {
       padding-left: 1.5rem;

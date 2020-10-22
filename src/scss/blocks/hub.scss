@@ -5,12 +5,15 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
+
   .hub__item, .hub__divider {
     margin-right: 1rem;
   }
+
   &__item:last-child {
     margin-right: 0;
   }
+
   &__divider {
     content: '';
     height: 2rem;
@@ -18,9 +21,11 @@
     background-color: $card;
     border-radius: 1px;
   }
+
   &__link {
     text-decoration: none;
   }
+
   @media screen and (min-width:$xl) {
     & {
       justify-content: flex-end;

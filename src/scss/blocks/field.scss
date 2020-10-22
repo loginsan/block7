@@ -1,0 +1,20 @@
+@import "../theme/vars";
+
+.field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: $text;
+  background: $white;
+  border: 1px solid $card;
+  border-radius: 8px;
+
+  &::placeholder {
+    color: $bullet;
+  }
+}

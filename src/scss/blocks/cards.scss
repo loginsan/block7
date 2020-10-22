@@ -2,6 +2,7 @@
 
 .cards {
   margin-bottom: 2rem;
+
   @media screen and (min-width:$sm) {
     & {
       display: grid;
@@ -10,32 +11,37 @@
       gap: 1rem;
     }
   }
+
   @media screen and (min-width:$md) {
     & {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem 1.5rem;
     }
   }
+
   @media screen and (min-width:$lg) {
     & {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       gap: 1rem 2rem;
     }
   }
-  /* CARDS__ITEM */
+
   &__item {
     min-width: 14rem;
     max-width: 15rem;
     height: 4.5rem;
   }
+
   @media screen and (min-width:$sm) {
     &__item {
       max-width: none;
     }
   }
+
   &__item--device {
     height: 10rem;
   }
+
   &__link {
     display: block;
     position: relative;
@@ -50,9 +56,11 @@
     text-decoration: none;
     outline: none;
   }
+
   &__link:active, &__link:hover, &__link:focus {
     border-color: $textfocus;
   }
+
   &__link::after {
     position: absolute;
     z-index: 1;
@@ -66,10 +74,12 @@
     opacity: 1;
     transition: all .2s linear;
   }
+
   &__link:active::after, &__link:hover::after, &__link:focus::after {
     opacity: 0;
     right: 0;
   }
+
   &__link--lenovo { background-image: url(./../img/brand-lenovo.png) }
   &__link--samsung { background-image: url(./../img/brand-samsung.png) }
   &__link--apple { background-image: url(./../img/brand-apple.png) }

@@ -1,6 +1,7 @@
 @import "../theme/vars";
 
 .chapter {
+
   &__title {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -14,30 +15,36 @@
     background: $ffill;
     color: $textdim;
   }
+
   &__body {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
   }
+
   @media screen and (min-width:$md) {
     &__body {
       padding-top: 1.5rem;
       padding-bottom: 2rem;
     }
   }
+
   @media screen and (min-width:$xl) {
     &__body {
       padding-bottom: 3.125rem;
     }
   }
+
   &__expand {
     display: none;
   }
+
   @media screen and (min-width:$sm) {
     &__pool {
       height: auto;
       transition: all .4s ease;
       margin-bottom: 1.5rem;
     }
+
     &__expand {
       display: flex;
     }

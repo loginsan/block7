@@ -3,19 +3,3 @@
 .hidden {
   display: none;
 }
-.hide-xs {
-  display: none;
-  @media screen and (min-width:$sm) {
-    & {
-      display: block;
-    }
-  }
-}
-@media screen and (min-width:$xl) {
-  .hide-xl {
-    display: none;
-  }
-}
-.over-hidden {
-  overflow: hidden;
-}

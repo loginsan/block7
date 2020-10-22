@@ -4,6 +4,7 @@
   position: relative;
   padding: 0 0 1.5rem;
   margin-left: 0;
+
   @media screen and (min-width:$xl) {
     & {
       margin-left: $xs;
@@ -11,30 +12,37 @@
       background-color: $smoke;
     }
   }
+
   &__header {
     margin-bottom: 1.5rem;
   }
+
   &__title {
     font-size: 1.75rem;
     line-height: 1.43;
   }
+
   @media screen and (min-width:$xl) {
     &__title {
       padding-right: 45%;
     }
   }
+
   &__menu {
     margin-bottom: 1.5rem;
   }
+
   &__footer {
     padding-top: 1rem;
     border-top: 1px solid $border;
   }
+
   @media screen and (min-width:$md) {
     &__footer {
       padding-top: 2rem;
     }
   }
+
   @media screen and (min-width:$xl) {
     &__footer {
       background-color: $smoke;

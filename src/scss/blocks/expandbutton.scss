@@ -13,9 +13,11 @@
   color: $text;
   cursor: pointer;
   outline: none;
+
   &:hover {
     color: $textdim;
   }
+
   &::before {
     content: '';
     width: 1.5rem;
@@ -25,6 +27,7 @@
     transform: rotate(0deg);
     transition: transform .2s linear;
   }
+
   &--reverse::before {
     transform: rotate(180deg);
   }

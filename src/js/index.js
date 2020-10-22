@@ -1,7 +1,9 @@
+"use strict";
+
 import '../scss/style.scss';
-import {swiperIIFE} from './swipers';
+import './swipers';
 import './expands';
 import './sitenav';
 import './modals';
 
-console.log('Works!');
+//console.log('Works!');
