@@ -777,32 +777,6 @@ button, input, textarea {
 .form__fieldset::after {
   clear: both; }
 
-.form__field {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 1rem;
-  padding: .75rem 1rem;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #1B1C21;
-  background: #FFFFFF;
-  border: 1px solid #EAEAEA;
-  border-radius: 8px; }
-
-.form__field::-webkit-input-placeholder {
-  color: #DDDDDD; }
-
-.form__field::-moz-placeholder {
-  color: #DDDDDD; }
-
-.form__field:-ms-input-placeholder {
-  color: #DDDDDD; }
-
-.form__field::placeholder {
-  color: #DDDDDD; }
-
 .form__notice {
   padding: 0;
   margin: 0 0 1rem;
@@ -816,6 +790,28 @@ button, input, textarea {
 
 .form__submit {
   float: right; }
+
+.field {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .75rem 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #1B1C21;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px; }
+  .field::-webkit-input-placeholder {
+    color: #DDDDDD; }
+  .field::-moz-placeholder {
+    color: #DDDDDD; }
+  .field:-ms-input-placeholder {
+    color: #DDDDDD; }
+  .field::placeholder {
+    color: #DDDDDD; }
 
 .modal {
   position: fixed;
@@ -912,8 +908,7 @@ button, input, textarea {
     height: 12rem; } }
 
 .cards {
-  margin-bottom: 2rem;
-  /* CARDS__ITEM */ }
+  margin-bottom: 2rem; }
   @media screen and (min-width: 540px) {
     .cards {
       display: grid;
